@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+<section class="terms-section">
+    <div class="terms-inner">
+        <div class="terms-header">
+            <span class="hero-badge">Legal</span>
+            <h1 class="terms-title">Terms and Conditions</h1>
+            <p class="terms-meta">Last updated: April 2026</p>
+        </div>
+
+        <div class="terms-body">
+            <div class="terms-block">
+                <h2>1. Acceptance of Terms</h2>
+                <p>By accessing or using Spendly, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the service. These terms apply to all visitors, users, and others who access or use Spendly.</p>
+            </div>
+
+            <div class="terms-block">
+                <h2>2. Use of Service</h2>
+                <p>Spendly is a personal expense tracking application intended for individual use. You agree to use the service only for lawful purposes and in accordance with these terms. You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account.</p>
+                <p>You agree not to:</p>
+                <ul>
+                    <li>Use the service for any unlawful or fraudulent purpose</li>
+                    <li>Attempt to gain unauthorised access to any part of the service</li>
+                    <li>Interfere with or disrupt the integrity or performance of the service</li>
+                    <li>Share your account credentials with any third party</li>
+                </ul>
+            </div>
+
+            <div class="terms-block">
+                <h2>3. User Data</h2>
+                <p>You retain full ownership of the expense data you enter into Spendly. By using the service, you grant Spendly a limited licence to store and process your data solely for the purpose of providing the service to you.</p>
+                <p>We do not sell, trade, or share your personal financial data with third parties. Data may be stored on secure servers and is handled in accordance with our Privacy Policy. You may request deletion of your data at any time by contacting us.</p>
+            </div>
+
+            <div class="terms-block">
+                <h2>4. Limitations of Liability</h2>
+                <p>Spendly is provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted, error-free, or completely secure.</p>
+                <p>To the fullest extent permitted by law, Spendly shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the service, including but not limited to loss of data or financial decisions made based on information within the app.</p>
+            </div>
+
+            <div class="terms-block">
+                <h2>5. Changes to Terms</h2>
+                <p>We reserve the right to modify these Terms and Conditions at any time. Changes will be effective immediately upon posting to the site. Your continued use of Spendly after any changes constitutes your acceptance of the new terms. We encourage you to review these terms periodically.</p>
+                <p>If we make material changes, we will make reasonable efforts to notify registered users.</p>
+            </div>
+
+            <div class="terms-footer">
+                <p>If you have any questions about these Terms and Conditions, please contact us.</p>
+                <a href="{{ url_for('landing') }}" class="btn-ghost">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
