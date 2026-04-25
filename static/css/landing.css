@@ -195,6 +195,65 @@
 .chart-bar-purple { background: #7b68c8; }
 
 /* ------------------------------------------------------------------ */
+/* Video modal                                                          */
+/* ------------------------------------------------------------------ */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.72);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay.is-open {
+    display: flex;
+}
+
+.modal-box {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: var(--ink);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.75rem;
+    background: transparent;
+    border: none;
+    color: var(--paper);
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.25rem 0.4rem;
+    line-height: 1;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.modal-close:hover { opacity: 1; }
+
+.modal-video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.modal-video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ------------------------------------------------------------------ */
 /* Responsive                                                           */
 /* ------------------------------------------------------------------ */
 
